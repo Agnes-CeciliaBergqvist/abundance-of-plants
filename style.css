@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Ramabhadra', sans-serif;
  }
 
 body {
@@ -13,8 +14,8 @@ body {
     background-size: cover;
     position: relative;
     width: 100vw;
-
 }
+
 .main {
     display: flex;
     flex-direction: column;
@@ -31,12 +32,13 @@ body {
     padding: 0.3rem;
     
 }
+
 .headline-h2 { 
     display: flex; 
     text-align: center; 
     margin-bottom: 1rem;
     color: white;  
-    font-size: 1.8rem; 
+    font-size: 1.6rem; 
 }
 
 ul { 
@@ -48,7 +50,7 @@ ul { 
 #addBtn, #clear {
     background-color: #929c7d8a;
     border: none;
-    color: rgb(247, 244, 244);
+    color: rgb(231, 228, 228);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -56,4 +58,16 @@ ul { 
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+.list { 
+    background-color: #929c7d8a;
+    height: auto;   
+}
+
+@media (min-width: 768px) { 
+    body {
+        background-image: url('./pictures/road.jpg');
+
+    }
+    
 }
