@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,39 @@
     <script src="./js.js" defer></script>
 
 </head>
-<body>
-    
-<div class="main">
-    <select id="drop-down">
-        <option value="*" class="Hej">20</option>
-        <option value="*" class="Hej">25</option>
-        <option value="*" class="Hej">30</option>
-        <option value="*" class="Hej">35</option>
-        <option value="*" class="Hej">40</option>
-        <option value="*" class="Hej">45</option>
-        <option value="*" class="Hej">50</option>
-        <option value="*" class="Hej">60</option>
-        <option value="*" class="Hej">70</option>
-        <option value="*" class="Hej">80</option>
-        <option value="*" class="Hej">100</option>
-    </select>
 
-    <input type="number" placeholder="Write a value m2">
-    <button id="add" onclick="add()">Calculate</button>
-    <button id="clear"> CLEAR </button>
-</div> 
+<body>
+
+    <div class="main">
+        <select id="drop-down">
+            <option selected disabled>C-C Distance</option>
+            <option value="25">20</option>
+            <option value="16">25</option>
+            <option value="11">30</option>
+            <option value="8">35</option>
+            <option value="6">40</option>
+            <option value="5">45</option>
+            <option value="4">50</option>
+            <option value="3">60</option>
+            <option value="2">70</option>
+            <option value="1.5">80</option>
+            <option value="1">100</option>
+        </select>
+
+        <input type="number" id="enter-number" placeholder="Write a value m2">
+        <button id="addBtn">Calculate</button>
+        <button id="clear"> CLEAR </button>
+
+        <div class="list">
+            <h2>List:</h2>
+            <!-- <div id="income" style="color:blue"> -->
+            <ul class="ulList">
+                <!-- innerText-->
+            </ul>
+        </div>
+
+    </div>
 
 </body>
+
 </html>
