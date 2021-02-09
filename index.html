@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abundance of Plants</title>
 
-    <script src="./style.css"></script>
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
     <script src="./js.js" defer></script>
 
 </head>
 
 <body>
+    
+
+    
 
     <div class="main">
+        <h2 class="headline-h2">Calculate C-C Distance</h2>
+    
         <select id="drop-down">
-            <option selected disabled>C-C Distance</option>
+            <option selected disabled>Choose distance</option>
             <option value="25">20</option>
             <option value="16">25</option>
             <option value="11">30</option>
@@ -30,18 +35,16 @@
         </select>
 
         <input type="number" id="enter-number" placeholder="Write a value m2">
-        <button id="addBtn">Calculate</button>
+        <button id="addBtn">CALCULATE</button>
         <button id="clear"> CLEAR </button>
 
         <div class="list">
-            <h2>List:</h2>
-            <!-- <div id="income" style="color:blue"> -->
-            <ul class="ulList">
-                <!-- innerText-->
-            </ul>
+            <h2 class="qty">Quantity:</h2>
+            <ul class="ulList"></ul>
         </div>
 
     </div>
+
 
 </body>
 

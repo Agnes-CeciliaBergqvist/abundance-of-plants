@@ -1,0 +1,59 @@
+/*CSS code made for 320px device*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
+body {
+    background-image: url('./pictures/road.jpg');
+    background-repeat: no-repeat;
+    height: 376vw; 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white; 
+}
+
+#drop-down, #enter-number, #addBtn, #clear { 
+    width: 40%; 
+    margin: 0.2rem;
+    padding: 0.3rem;
+    
+}
+.headline-h2 { 
+    display: flex; 
+    text-align: center; 
+    margin-bottom: 1rem;
+    color: white;  
+    font-size: 1.8rem; 
+}
+
+ul { 
+    text-align: center;
+    width: 1rem; 
+    margin: auto; 
+}
+
+#addBtn, #clear {
+    background-color: #929c7d8a;
+    border: none;
+    color: rgb(247, 244, 244);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

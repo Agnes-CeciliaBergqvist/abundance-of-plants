@@ -24,6 +24,5 @@ function clear() {
 }
 
 var clearButton = document.querySelector("#clear")
-console.log(clearButton)
 
 clearButton.addEventListener("click", clear);
