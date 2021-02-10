@@ -66,7 +66,9 @@ ul { 
 
 @media (min-width: 768px) { 
     body {
-        background-image: url('./pictures/road.jpg');
+        background-image: url('/pictures/road.jpg');
+        height: 165vw; 
+
 
     }
     
