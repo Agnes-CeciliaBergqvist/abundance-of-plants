@@ -7,25 +7,24 @@
  }
 
 body {
-    /* background-image: url('./pictures/road.jpg'); */
+   
     background-repeat: no-repeat;
-    height: 376vw; 
     background-position: center;
     background-size: cover;
     position: relative;
-    width: 100vw;
     background-color: #929c7d8a;;
 }
 
 .main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     text-align: center;
-    margin-top: 3.1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    margin-top: 6.1rem;
     color: white; 
-    /* border: 3px solid rgb(248, 243, 243); */
     background-color: rgb(169, 182, 157);
 }
 
@@ -33,25 +32,21 @@ body {
 #enter-number,
 #addBtn, 
 #clear, 
-.box
-
-{
+.box{
     margin: 0.4rem;
     padding: 1rem;
-    
+    width: 85vw;
 }
 
-.headline-h2 {
+.headline-h1 {
     display: flex; 
     text-align: center; 
     margin-bottom: 1rem;
     color: rgb(3, 3, 3);  
     font-size: 2rem; 
-    /* border-bottom: 3px solid rgb(248, 243, 243); */
+    justify-content: center;
 }
-h3 { 
-    color: rgb(3, 3, 3);
-}
+
 
 ul {
     text-align: center;
@@ -61,19 +56,21 @@ ul {
 
 #addBtn, #clear {
     background-color: #0507018a;
-    border: none;
+    
     color: rgb(231, 228, 228);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 22px;
-    cursor: pointer;
+    font-size: 16px;   
+    cursor: pointer;   
+    width: 45vw;
+    border-radius: 1rem 1rem;   
 }
 .list {
     background-color: #0507018a;
-    height: auto;   
+    height: auto;
+    border-radius: 1rem 1rem;  
 }
 .index-flexbox-head {
     display: flex;
@@ -97,15 +94,23 @@ ul {
 }
 
 
+/* For Ipad and bigger screens  */
+@media only screen and (max-width: 2560px) and (min-width: 768px) { 
 
-
-@media (min-width: 768px) { 
-
-    .headline-h2 {
-        font-size: 4rem;
+    .headline-h1 {
+        font-size: 5rem;
+        margin-left: 4.6rem;
     }
-    h3 {
-        font-size: 2rem;
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin-top: 3.1vw;
+        padding-left: 30vw;
+        padding-right: 30vw; 
+        color: white; 
+        
     }
     #drop-down, 
     #enter-number,
@@ -124,24 +129,4 @@ ul {
     margin: 4px 82px;
  }
 
-}
-    
-    
-
-@media (min-width: 1024px) { 
-   
-    .headline-h2 {
-        font-size: 5rem; 
-        margin-left: 4.6rem;
-    }
-    .main {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        margin-top: 3.1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        color: white; 
-    }
-
-}
+} 
